@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quang Hưng - Đỗ Vân</title>
+
+  <meta property="og:title" content="Quang Hưng & Đỗ Vân - 19/01/2025">
+  <meta property="og:description"
+    content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020 di RM Pondok Kenanga, Jakasampurna Bekasi">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
+  <meta property="og:url" content="http://sherly.dae.ng/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- Begin Script for Countdown -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23064379-20');
+
+    var showmap1 = 0;
+
+    function showmap() {
+      if (showmap1 == 0) {
+        document.getElementById('map01').style.display = 'block';
+        showmap1 = 1;
+        console.log(showmap1);
+      } else {
+        showmap1 = 0;
+        document.getElementById('map01').style.display = 'none';
+        console.log(showmap1);
+      }
+    }
+
+  </script>
+  <!-- Begin Script for Countdown -->
+
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <!-- Begin Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/favicon.png" alt="Flower" />
+    </div>
+  </div>
+  <!-- End Preloader-->
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Waktu">
+                Waktu
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#lokasi">
+                Lokasi
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <a class="navbar-item" href="#tentang-sherly-daeng">
+                Tentang Sherly dan Daeng
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#rsvp">
+                RSVP
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle" style="font-family: 'Times New Roman', Times, serif;">THIỆP MỜI</h1>
+          <h2 class="title">Quang Hưng & Đỗ Vân</h2>
+          <h2 class="subtitle tempatwaktu" style="font-family: 'Times New Roman', Times, serif;">
+            19/01/2025
+          </h2>
+        </div>
+        <!-- Start Countdown -->
+        <div style="font-family: 'Times New Roman', Times, serif;">
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">Ngày</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">Giờ</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">Phút</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">Giây</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year;
+            var harih = '01/19/2025 12:05:00';
+
+            $('#hitungmundur').countdown({
+              date: harih, // TODO Date format: 07/27/2017 17:00:00
+              offset: +7, // TODO Your Timezone Offset
+              day: 'Ngày',
+              days: 'Ngày'
+            }, function () {
+              //alert('Done!');
+            });
+          </script>
+        </div>
+        <!-- End Countdown -->
+      </div>
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot ">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home" style="font-family: 'Times New Roman', Times, serif;">Home</a>
+                </li>
+                <li>
+                  <a href="#Waktu" style="font-family: 'Times New Roman', Times, serif;">Thời gian - Địa Điểm</a>
+                </li>
+                <!--<li>
+                    <a href="#lokasi">Lokasi</a>
+                  </li>-->
+                <li>
+                  <a href="#tentang-sherly-daeng" style="font-family: 'Times New Roman', Times, serif;">Album ảnh
+                    cưới</a>
+                </li>
+
+                <li>
+                  <a href="#rsvp" style="font-family: 'Times New Roman', Times, serif;">Chúc Mừng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
+
+  <!-- Begin Main Content -->
+  <div class="main-content">
+    <!-- Begin regular-section-->
+    <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+      id="regular-section">
+
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <img src="image/divider-flower.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+      </div>
+
+      <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+        Trân trọng kính mời bạn và người thương tới dự
+        <br />
+        Bữa cơm thân mật chung vui cùng Gia Đình chúng tôi
+      </p>
+
+      <span class="space40px"></span>
+      <span class="space40px"></span>
+
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <div class="nama-lengkap" style="font-family: 'Times New Roman', Times, serif;">
+          Quang Hưng
+        </div>
+        <div class="ampersand">&</div>
+        <div class="nama-lengkap" style="font-family: 'Times New Roman', Times, serif;">
+          Đỗ Vân
+        </div>
+
+      </div>
+      <span class="space40px"></span>
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+      </div>
+      <span class="space40px"></span>
+      <span class="space40px"></span>
+    </section>
+    <!-- End regular-section-->
+
+    <!-- Begin Waktu Section -->
+    <section class="section-dark" id="Waktu">
+      <div class="container">
+
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title" style="font-family: 'Times New Roman', Times, serif;"> Thời
+            Gian - Địa Điểm</h1>
+        </div>
+
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <p class="is-larger has-text-centered">
+            <div class="waktu tanggal-hari has-text-centered" style="font-family: 'Times New Roman', Times, serif;">7h30
+              - Tại nhà trai</div>
+            <div class="waktu tanggal-angka has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+              19.01.2025</div>
+            <div class="waktu tanggal-bulan has-text-centered" style="font-family: 'Times New Roman', Times, serif;">Khu
+              Giãn Dân, Tân Phúc, Ân Thi, Hưng Yên</div>
+            </p>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <p class="waktu is-larger has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+            </p>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <p class="waktu is-larger has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="waktu tanggal-hari has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+              17h00 - Tại nhà gái</div>
+            <div class="waktu tanggal-angka has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+              18.01.2025</div>
+            <div class="waktu tanggal-bulan has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+              Thôn Chu Xá, Bắc Sơn, Ân Thi, Hưng Yên</div>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="space40px"></div>
+      <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+        <button class="button has-tooltip btn-cta" onclick="showmap()">
+          &nbsp;&nbsp;Xem Bản Đồ
+        </button>
+      </div>
+
+      <div class="container" id="map01" hidden="true">
+
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.1341127749145!2d106.11017899999999!3d20.8440722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135bcfff1010f67%3A0x7e38f81be033007e!2zWMaw4bufbmcgc-G6o24gWHXhuqV0IE7hu5lpIE5nb-G6oWkgVGjhuqV0IFTDom4gUGjDumM!5e1!3m2!1sja!2sjp!4v1735726173707!5m2!1sja!2sjp"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d641.1708302370986!2d106.10512985231045!3d20.88181414670972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135bd9c84a7882b%3A0x7a15d199284ccff7!2zVGjDtG4gY2h1IHjDoQ!5e1!3m2!1sja!2sjp!4v1735726351414!5m2!1sja!2sjp"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End Waktu Content -->
+
+    <!-- Begin Lokasi Section -->
+    <!--<section class="section-darker" id="lokasi">
+      <div class="container">
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Sự Kiện Cưới</h1>
+        </div>
+        <div class="space40px">
+        </div>
+      </div>
+    </section>-->
+    <!-- End Lokasi Content -->
+
+    <!-- Begin Tentang Sherly and Daeng -->
+    <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear" style="font-family: 'Times New Roman', Times, serif;">Album Ảnh Cưới
+            </h1>
+
+            <!-- IMAGES -->
+            <div class=" tile">
+              <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="content">
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="space24px"></div>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+                </article>
+              </div>
+              <div class="tile is-parent">
+              </div>
+            </div>
+            <!-- IMAGES -->
+            <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+            </div>
+            <div class="space40px"></div>
+            <div class="space40px"></div>
+
+          </div>
+        </div>
+    </section>
+    <!-- End Tentang Sherly dan Daeng -->
+
+    <!-- Begin RSVP Content -->
+    <section class="section-dark contact" id="rsvp">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear" style="font-family: 'Times New Roman', Times, serif;">Chúc Mừng</h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-4 has-vertically-aligned-content">
+            <img src="./image/hungbank.PNG">
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <img src="./image/hungbank.PNG">
+          </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-4 has-vertically-aligned-content">
+            <p class="waktu is-larger has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="title has-text-centered section-title" style="font-family: 'Times New Roman', Times, serif;">
+              Quang Hưng</div>
+            </p>
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+            <p class="waktu is-larger has-text-centered" style="font-family: 'Times New Roman', Times, serif;">
+              <div class="title has-text-centered section-title" style="font-family: 'Times New Roman', Times, serif;">
+                Đỗ Vân</div>
+              </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End RSVP Content -->
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <a href="#" class="has-vertically-align">
+        <p class="has-vertically-align">2020 &copy Quang Hưng & Đỗ Vân</p>
+      </a>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+  </script>
+</body>
+
+</html>
